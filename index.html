@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fake Job / Recruitment Scam Detector</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="nav-logo">
+            🛡️ ScamGuard
+        </div>
+
+        <div class="nav-links">
+            <a href="#analyzer">Analyzer</a>
+            <a href="#safety">Safety Tips</a>
+            <a href="#about-project">About</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Header -->
+    <header>
+
+    
+
+
+    <!-- Main Content -->
+   <main class="container" id="analyzer"></main>
+
+        <!-- Warning Banner -->
+        <div class="card">
+            <h2>⚠️ Review Before You Respond</h2>
+
+            <p>
+                Fake job offers may ask for money, personal information,
+                OTPs or immediate action. Paste the recruitment message
+                below to check for possible warning signs.
+            </p>
+        </div>
+
+
+        <!-- Message Input -->
+        <div class="card">
+
+            <h2>Analyze a Recruitment Message</h2>
+
+            <p>
+                Paste the job message, WhatsApp message, email or SMS here:
+            </p>
+
+            <br>
+
+            <textarea
+                id="jobMessage"
+                placeholder="Example: Congratulations! You have been selected for a work-from-home job. Pay ₹2,000 registration fee to confirm your position..."></textarea>
+
+            <br>
+
+            <button onclick="analyzeMessage()">
+                🔍 Analyze Message
+            </button>
+
+            <button onclick="clearMessage()" class="clear-button">
+                Clear
+            </button>
+            <div class="examples">
+
+    <p><strong>Try an example:</strong></p>
+
+    <button onclick="loadExample('high')">
+        🔴 High-Risk Example
+    </button>
+
+    <button onclick="loadExample('suspicious')">
+        🟠 Suspicious Example
+    </button>
+
+    <button onclick="loadExample('normal')">
+        🟢 Normal Example
+    </button>
+
+</div>
+
+        </div>
+
+
+        <!-- Results -->
+        <div class="card" id="resultSection">
+
+            <h2>Analysis Result</h2>
+
+            <div id="result">
+                <p>
+                    Your analysis result will appear here.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- Safety Tips -->
+        <div class="card" id="safety">
+
+            <h2>🛡️ Safety Recommendations</h2>
+            <ul>
+                <li>Never pay money to get a job.</li>
+                <li>Never share OTPs, PINs or passwords.</li>
+                <li>Verify the company before accepting an offer.</li>
+                <li>Be careful with urgent job offers.</li>
+                <li>Do not click suspicious links.</li>
+            </ul>
+
+        </div>
+
+    </main>
+<div class="card about-project" id="about-project">
+    <h2>ℹ️ About This Project</h2>
+
+    <p>
+        The Fake Job / Recruitment Scam Detector is a web-based application
+        designed to help users identify common warning signs in suspicious
+        recruitment messages.
+    </p>
+
+    <p>
+        The system analyzes the message for patterns such as payment requests,
+        requests for sensitive information, urgency, unrealistic salary
+        promises, instant selection claims, and suspicious communication
+        channels.
+    </p>
+
+    <p>
+        Based on the detected warning signs, the application calculates a
+        risk score from 0 to 100 and displays a risk level to help users make
+        safer decisions before responding to a recruitment message.
+    </p>
+
+    <div class="about-highlights">
+        <div>
+            <strong>🔍 Rule-Based Analysis</strong>
+            <span>Checks common recruitment scam patterns.</span>
+        </div>
+
+        <div>
+            <strong>📊 Risk Score</strong>
+            <span>Provides an easy-to-understand score from 0–100.</span>
+        </div>
+
+        <div>
+            <strong>🛡️ Safety Guidance</strong>
+            <span>Provides recommendations for safer online recruitment.</span>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer id="about">
+        <p>
+            Fake Job / Recruitment Scam Detector
+        </p>
+
+        <p>
+            This tool provides a screening result and does not guarantee
+            that a message is genuine or fraudulent.
+        </p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
